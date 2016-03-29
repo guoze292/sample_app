@@ -1,4 +1,4 @@
-/Users/zuck292/.rvm/rubies/ruby-2.0.0-p643/bin/ruby -r ./siteconf20160329-3897-qcdnog.rb extconf.rb
+/Users/zuck292/.rvm/rubies/ruby-2.0.0-p643/bin/ruby -r ./siteconf20160329-30884-zupiz3.rb extconf.rb
 checking if the C compiler accepts ... yes
 checking if the C compiler accepts -Wno-error=unused-command-line-argument-hard-error-in-future... no
 Building nokogiri using packaged libraries.
@@ -199,5 +199,5 @@ rmdir -p /Users/zuck292/Desktop/rails/sample/vendor/bundle/ruby/2.0.0/gems/nokog
 rm -rf /Users/zuck292/Desktop/rails/sample/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.7.2/ports
 
 make "DESTDIR=" install
-/usr/bin/install -c -m 0755 nokogiri.bundle ./.gem.20160329-3897-5vue06/nokogiri
+/usr/bin/install -c -m 0755 nokogiri.bundle ./.gem.20160329-30884-1ec8yu7/nokogiri
 installing default nokogiri libraries

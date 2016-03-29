@@ -1,4 +1,4 @@
-/Users/zuck292/.rvm/rubies/ruby-2.0.0-p643/bin/ruby -r ./siteconf20160329-3897-1getxk7.rb extconf.rb
+/Users/zuck292/.rvm/rubies/ruby-2.0.0-p643/bin/ruby -r ./siteconf20160329-30884-v4i6au.rb extconf.rb
 checking for ffi.h... no
 checking for ffi.h in /usr/local/include,/usr/include/ffi... no
 checking for rb_thread_blocking_region()... yes
@@ -140,5 +140,5 @@ compiling Types.c
 compiling Variadic.c
 linking shared-object ffi_c.bundle
 ld: warning: could not create compact unwind for _ffi_call_unix64: does not use RBP or RSP based frame
-/usr/bin/install -c -m 0755 ffi_c.bundle ./.gem.20160329-3897-514mgr
+/usr/bin/install -c -m 0755 ffi_c.bundle ./.gem.20160329-30884-z7c0j3
 installing default ffi_c libraries
