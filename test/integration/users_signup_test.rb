@@ -8,6 +8,8 @@ class UsersSignupTest < ActionDispatch::IntegrationTest
   	get signup_path
   	#不懂
   	assert_no_difference 'User.count' do
+  		#post 到users_path 其实就是调用了users的resources里的post功能，指向create
+  		
   		post users_path, user: {name:"",
   								email:"user@invalid",
   								password:"food",
@@ -30,7 +32,7 @@ class UsersSignupTest < ActionDispatch::IntegrationTest
  	end
  	assert_template 'users/show'
  end
- 
+
 
 
 end
