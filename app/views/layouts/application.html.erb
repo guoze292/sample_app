@@ -2,35 +2,38 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
   <head>
-   
+
     <title>
 	   <%= full_title(yield(:title))%>
-    </title> 
+    </title>
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
     <%= csrf_meta_tags %>
-    <%= render 'layouts/shim' %>    
-   
+    <%= render 'layouts/shim' %>
+
   </head>
 
   <body>
 
-        
+
      <%= render 'layouts/header' %>
 
-      
 
-      <div class="jumbotron">
-        <h1>Welcome!</h1>
-        <p class="lead">This is a place where you can share everything you want with 292</p>
-        <p> <%= link_to "Sign up now!", signup_path, class: "btn btn-lg btn-success" %></p>
-      </div>
+
 
       <div class="container">
+        <% flash.each do |message_type, message|%>
+          <div class= "alert alert-<%=message_type%>"><%=message%></div>
+        <%end%>
+
         <%= yield%>
 
-      </div> <!-- /container -->
+        <p></p>
+        
       <%= render 'layouts/footer'%>
+      <%= debug(params) if Rails.env.development?%>
+
+      </div> <!-- /container -->
 
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
   </body>
