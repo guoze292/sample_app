@@ -20,6 +20,7 @@ class UsersController < ApplicationController
       flash[:success] = "welcome to the sample app!"
       redirect_to user_url(@user)
     else
+      flash[:danger] = "sign up fails"
       render 'new'
     end
   end
