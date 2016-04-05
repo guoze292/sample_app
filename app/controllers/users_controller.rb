@@ -1,4 +1,10 @@
 class UsersController < ApplicationController
+
+  def index
+    redirect_to signup_path
+  end
+
+
   def new
     @user = User.new
   end
