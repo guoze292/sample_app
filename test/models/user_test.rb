@@ -9,7 +9,7 @@ class UserTest < ActiveSupport::TestCase
   					password: "foobar", password_confirmation: "foobar")
   end
 
-  test "should be valid" do 
+  test "should be valid" do
   	assert @user.valid?
   end
 
@@ -19,22 +19,22 @@ class UserTest < ActiveSupport::TestCase
   end
 
 
-  test "email should be present" do 
+  test "email should be present" do
   	@user.email = "     "
   	assert_not @user.email?
   end
 
-  test "name should not be too long" do 
+  test "name should not be too long" do
   	@user.name = "a" *51
   	assert_not @user.valid?
   end
 
-  test "email should not be too long" do 
+  test "email should not be too long" do
   	@user.name = "a" *244 + "@example.com"
   	assert_not @user.valid?
   end
-  
-  test "email validation should accept valid addresses" do 
+
+  test "email validation should accept valid addresses" do
   	valid_addresses = %w[user@example.com USER@foo.COM A_US-ER@foo.bar.org
   						 first.last@foo.jp alice+bob@baz.cn]
   	valid_addresses.each do |valid_addresse|
@@ -51,7 +51,7 @@ class UserTest < ActiveSupport::TestCase
 		invalid_addresses.each do |invalid_address|
 		@user.email = invalid_address
 		assert_not @user.valid?, "#{invalid_address.inspect} should be invalid"
-		end  
+		end
 	end
 
 
@@ -67,11 +67,15 @@ class UserTest < ActiveSupport::TestCase
 		assert_not @user.valid?
 	end
 
-	test "password should have a minimum length " do 
+	test "password should have a minimum length " do
 		@user.password = @user.password_confirmation = "a"*5
 		assert_not @user.valid?
 	end
-	
+
+
+  test "authenticated? should return false for a user with nil digest" do
+    assert_not @user.authenticated?("")
+  end
 
 
 
