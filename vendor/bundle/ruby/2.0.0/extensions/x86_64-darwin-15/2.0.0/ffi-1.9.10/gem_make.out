@@ -1,4 +1,5 @@
-/Users/zuck292/.rvm/rubies/ruby-2.0.0-p643/bin/ruby -r ./siteconf20160329-30884-v4i6au.rb extconf.rb
+current directory: /Users/zuck292/Desktop/rails/sample/vendor/bundle/ruby/2.0.0/gems/ffi-1.9.10/ext/ffi_c
+/Users/zuck292/.rvm/rubies/ruby-2.0.0-p643/bin/ruby -r ./siteconf20160408-9343-letymc.rb extconf.rb
 checking for ffi.h... no
 checking for ffi.h in /usr/local/include,/usr/include/ffi... no
 checking for rb_thread_blocking_region()... yes
@@ -8,8 +9,14 @@ checking for ffi_prep_cif_var()... no
 creating extconf.h
 creating Makefile
 
+To see why this extension failed to compile, please check the mkmf.log which can be found here:
+
+  /Users/zuck292/Desktop/rails/sample/vendor/bundle/ruby/2.0.0/extensions/x86_64-darwin-15/2.0.0/ffi-1.9.10/mkmf.log
+
+current directory: /Users/zuck292/Desktop/rails/sample/vendor/bundle/ruby/2.0.0/gems/ffi-1.9.10/ext/ffi_c
 make "DESTDIR=" clean
 
+current directory: /Users/zuck292/Desktop/rails/sample/vendor/bundle/ruby/2.0.0/gems/ffi-1.9.10/ext/ffi_c
 make "DESTDIR="
 Configuring libffi
 cd "/Users/zuck292/Desktop/rails/sample/vendor/bundle/ruby/2.0.0/gems/ffi-1.9.10/ext/ffi_c/libffi-x86_64-darwin15.3.0" && /Applications/Xcode.app/Contents/Developer/usr/bin/make
@@ -92,6 +99,7 @@ compiling Variadic.c
 linking shared-object ffi_c.bundle
 ld: warning: could not create compact unwind for _ffi_call_unix64: does not use RBP or RSP based frame
 
+current directory: /Users/zuck292/Desktop/rails/sample/vendor/bundle/ruby/2.0.0/gems/ffi-1.9.10/ext/ffi_c
 make "DESTDIR=" install
 cd "/Users/zuck292/Desktop/rails/sample/vendor/bundle/ruby/2.0.0/gems/ffi-1.9.10/ext/ffi_c/libffi-x86_64-darwin15.3.0" && /Applications/Xcode.app/Contents/Developer/usr/bin/make
 /Applications/Xcode.app/Contents/Developer/usr/bin/make "AR_FLAGS=" "CC_FOR_BUILD=" "CFLAGS=-Wall -fexceptions" "CXXFLAGS=" "CFLAGS_FOR_BUILD=" "CFLAGS_FOR_TARGET=" "INSTALL=/usr/bin/install -c" "INSTALL_DATA=/usr/bin/install -c -m 644" "INSTALL_PROGRAM=/usr/bin/install -c" "INSTALL_SCRIPT=/usr/bin/install -c" "JC1FLAGS=" "LDFLAGS=" "LIBCFLAGS=" "LIBCFLAGS_FOR_TARGET=" "MAKE=/Applications/Xcode.app/Contents/Developer/usr/bin/make" "MAKEINFO=/bin/sh /Users/zuck292/Desktop/rails/sample/vendor/bundle/ruby/2.0.0/gems/ffi-1.9.10/ext/ffi_c/libffi/missing --run makeinfo " "PICFLAG=" "PICFLAG_FOR_TARGET=" "RUNTESTFLAGS=" "SHELL=/bin/sh" "exec_prefix=/usr/local" "infodir=/usr/local/share/info" "libdir=/usr/local/lib" "mandir=/usr/local/share/man" "prefix=/usr/local" "AR=ar" "AS=as" "CC=/usr/bin/clang" "CXX=c++" "LD=ld" "NM=/usr/bin/nm" "RANLIB=ranlib" "DESTDIR=" all-recursive
@@ -140,5 +148,5 @@ compiling Types.c
 compiling Variadic.c
 linking shared-object ffi_c.bundle
 ld: warning: could not create compact unwind for _ffi_call_unix64: does not use RBP or RSP based frame
-/usr/bin/install -c -m 0755 ffi_c.bundle ./.gem.20160329-30884-z7c0j3
+/usr/bin/install -c -m 0755 ffi_c.bundle ./.gem.20160408-9343-5uja0i
 installing default ffi_c libraries

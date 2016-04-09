@@ -1,4 +1,5 @@
-/Users/zuck292/.rvm/rubies/ruby-2.0.0-p643/bin/ruby -r ./siteconf20160329-30884-1i6uqj0.rb extconf.rb
+current directory: /Users/zuck292/Desktop/rails/sample/vendor/bundle/ruby/2.0.0/gems/sqlite3-1.3.9/ext/sqlite3
+/Users/zuck292/.rvm/rubies/ruby-2.0.0-p643/bin/ruby -r ./siteconf20160408-9343-1ltwt3z.rb extconf.rb
 checking for sqlite3.h... yes
 checking for sqlite3_libversion_number() in -lsqlite3... yes
 checking for rb_proc_arity()... yes
@@ -14,8 +15,14 @@ checking for sqlite3_int64 in sqlite3.h... yes
 checking for sqlite3_uint64 in sqlite3.h... yes
 creating Makefile
 
+To see why this extension failed to compile, please check the mkmf.log which can be found here:
+
+  /Users/zuck292/Desktop/rails/sample/vendor/bundle/ruby/2.0.0/extensions/x86_64-darwin-15/2.0.0/sqlite3-1.3.9/mkmf.log
+
+current directory: /Users/zuck292/Desktop/rails/sample/vendor/bundle/ruby/2.0.0/gems/sqlite3-1.3.9/ext/sqlite3
 make "DESTDIR=" clean
 
+current directory: /Users/zuck292/Desktop/rails/sample/vendor/bundle/ruby/2.0.0/gems/sqlite3-1.3.9/ext/sqlite3
 make "DESTDIR="
 compiling backup.c
 compiling database.c
@@ -24,6 +31,7 @@ compiling sqlite3.c
 compiling statement.c
 linking shared-object sqlite3/sqlite3_native.bundle
 
+current directory: /Users/zuck292/Desktop/rails/sample/vendor/bundle/ruby/2.0.0/gems/sqlite3-1.3.9/ext/sqlite3
 make "DESTDIR=" install
-/usr/bin/install -c -m 0755 sqlite3_native.bundle ./.gem.20160329-30884-2w7ue0/sqlite3
+/usr/bin/install -c -m 0755 sqlite3_native.bundle ./.gem.20160408-9343-10epkij/sqlite3
 installing default sqlite3_native libraries

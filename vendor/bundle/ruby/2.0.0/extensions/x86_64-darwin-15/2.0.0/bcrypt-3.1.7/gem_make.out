@@ -1,9 +1,16 @@
-/Users/zuck292/.rvm/rubies/ruby-2.0.0-p643/bin/ruby -r ./siteconf20160329-30884-1mtum2r.rb extconf.rb
+current directory: /Users/zuck292/Desktop/rails/sample/vendor/bundle/ruby/2.0.0/gems/bcrypt-3.1.7/ext/mri
+/Users/zuck292/.rvm/rubies/ruby-2.0.0-p643/bin/ruby -r ./siteconf20160408-9343-r80n18.rb extconf.rb
 checking for ruby/util.h... yes
 creating Makefile
 
+To see why this extension failed to compile, please check the mkmf.log which can be found here:
+
+  /Users/zuck292/Desktop/rails/sample/vendor/bundle/ruby/2.0.0/extensions/x86_64-darwin-15/2.0.0/bcrypt-3.1.7/mkmf.log
+
+current directory: /Users/zuck292/Desktop/rails/sample/vendor/bundle/ruby/2.0.0/gems/bcrypt-3.1.7/ext/mri
 make "DESTDIR=" clean
 
+current directory: /Users/zuck292/Desktop/rails/sample/vendor/bundle/ruby/2.0.0/gems/bcrypt-3.1.7/ext/mri
 make "DESTDIR="
 compiling bcrypt_ext.c
 bcrypt_ext.c:17:25: warning: implicit conversion loses integer precision: 'long' to 'int' [-Wshorten-64-to-32]
@@ -44,6 +51,7 @@ compiling crypt_gensalt.c
 compiling wrapper.c
 linking shared-object bcrypt_ext.bundle
 
+current directory: /Users/zuck292/Desktop/rails/sample/vendor/bundle/ruby/2.0.0/gems/bcrypt-3.1.7/ext/mri
 make "DESTDIR=" install
-/usr/bin/install -c -m 0755 bcrypt_ext.bundle ./.gem.20160329-30884-1obwlz5
+/usr/bin/install -c -m 0755 bcrypt_ext.bundle ./.gem.20160408-9343-11n3igg
 installing default bcrypt_ext libraries

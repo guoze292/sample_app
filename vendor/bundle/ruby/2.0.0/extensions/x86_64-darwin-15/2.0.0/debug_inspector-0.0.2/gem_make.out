@@ -1,12 +1,16 @@
-/Users/zuck292/.rvm/rubies/ruby-2.0.0-p643/bin/ruby -r ./siteconf20160329-30884-7xa5zz.rb extconf.rb
+current directory: /Users/zuck292/Desktop/rails/sample/vendor/bundle/ruby/2.0.0/gems/debug_inspector-0.0.2/ext/debug_inspector
+/Users/zuck292/.rvm/rubies/ruby-2.0.0-p643/bin/ruby -r ./siteconf20160408-9343-k0vkf2.rb extconf.rb
 creating Makefile
 
+current directory: /Users/zuck292/Desktop/rails/sample/vendor/bundle/ruby/2.0.0/gems/debug_inspector-0.0.2/ext/debug_inspector
 make "DESTDIR=" clean
 
+current directory: /Users/zuck292/Desktop/rails/sample/vendor/bundle/ruby/2.0.0/gems/debug_inspector-0.0.2/ext/debug_inspector
 make "DESTDIR="
 compiling debug_inspector.c
 linking shared-object debug_inspector.bundle
 
+current directory: /Users/zuck292/Desktop/rails/sample/vendor/bundle/ruby/2.0.0/gems/debug_inspector-0.0.2/ext/debug_inspector
 make "DESTDIR=" install
-/usr/bin/install -c -m 0755 debug_inspector.bundle ./.gem.20160329-30884-hen0mf
+/usr/bin/install -c -m 0755 debug_inspector.bundle ./.gem.20160408-9343-153lwrw
 installing default debug_inspector libraries

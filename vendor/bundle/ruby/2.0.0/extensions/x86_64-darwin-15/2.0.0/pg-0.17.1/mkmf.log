@@ -928,7 +928,7 @@ int t(void) { rb_enc_alias(); return 0; }
 1 warning generated.
 Undefined symbols for architecture x86_64:
   "_rb_enc_alias", referenced from:
-      _t in conftest-9a9436.o
+      _t in conftest-ab5817.o
 ld: symbol(s) not found for architecture x86_64
 clang: error: linker command failed with exit code 1 (use -v to see invocation)
 checked program was:
@@ -1099,7 +1099,7 @@ int t(void) { rb_w32_wrap_io_handle(); return 0; }
 1 warning generated.
 Undefined symbols for architecture x86_64:
   "_rb_w32_wrap_io_handle", referenced from:
-      _t in conftest-0b2fe8.o
+      _t in conftest-31eaf0.o
 ld: symbol(s) not found for architecture x86_64
 clang: error: linker command failed with exit code 1 (use -v to see invocation)
 checked program was:

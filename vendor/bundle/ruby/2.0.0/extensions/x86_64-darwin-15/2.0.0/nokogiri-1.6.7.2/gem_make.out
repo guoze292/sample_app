@@ -1,4 +1,5 @@
-/Users/zuck292/.rvm/rubies/ruby-2.0.0-p643/bin/ruby -r ./siteconf20160329-30884-zupiz3.rb extconf.rb
+current directory: /Users/zuck292/Desktop/rails/sample/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.7.2/ext/nokogiri
+/Users/zuck292/.rvm/rubies/ruby-2.0.0-p643/bin/ruby -r ./siteconf20160408-9343-1vprbja.rb extconf.rb
 checking if the C compiler accepts ... yes
 checking if the C compiler accepts -Wno-error=unused-command-line-argument-hard-error-in-future... no
 Building nokogiri using packaged libraries.
@@ -142,8 +143,14 @@ checking for xmlSchemaSetValidStructuredErrors()... yes
 checking for xmlSchemaSetParserStructuredErrors()... yes
 creating Makefile
 
+To see why this extension failed to compile, please check the mkmf.log which can be found here:
+
+  /Users/zuck292/Desktop/rails/sample/vendor/bundle/ruby/2.0.0/extensions/x86_64-darwin-15/2.0.0/nokogiri-1.6.7.2/mkmf.log
+
+current directory: /Users/zuck292/Desktop/rails/sample/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.7.2/ext/nokogiri
 make "DESTDIR=" clean
 
+current directory: /Users/zuck292/Desktop/rails/sample/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.7.2/ext/nokogiri
 make "DESTDIR="
 compiling html_document.c
 compiling html_element_description.c
@@ -198,6 +205,7 @@ rm -rf /Users/zuck292/Desktop/rails/sample/vendor/bundle/ruby/2.0.0/gems/nokogir
 rmdir -p /Users/zuck292/Desktop/rails/sample/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.7.2/ext/nokogiri/tmp/x86_64-apple-darwin15.3.0
 rm -rf /Users/zuck292/Desktop/rails/sample/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.7.2/ports
 
+current directory: /Users/zuck292/Desktop/rails/sample/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.7.2/ext/nokogiri
 make "DESTDIR=" install
-/usr/bin/install -c -m 0755 nokogiri.bundle ./.gem.20160329-30884-1ec8yu7/nokogiri
+/usr/bin/install -c -m 0755 nokogiri.bundle ./.gem.20160408-9343-1eg63w1/nokogiri
 installing default nokogiri libraries

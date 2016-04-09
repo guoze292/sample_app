@@ -2,63 +2,63 @@
 # stub: bootstrap-sass 3.2.0.0 ruby lib
 
 Gem::Specification.new do |s|
-  s.name = "bootstrap-sass"
+  s.name = "bootstrap-sass".freeze
   s.version = "3.2.0.0"
 
-  s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
-  s.require_paths = ["lib"]
-  s.authors = ["Thomas McDonald"]
+  s.required_rubygems_version = Gem::Requirement.new(">= 0".freeze) if s.respond_to? :required_rubygems_version=
+  s.require_paths = ["lib".freeze]
+  s.authors = ["Thomas McDonald".freeze]
   s.date = "2014-06-26"
-  s.email = "tom@conceptcoding.co.uk"
-  s.homepage = "https://github.com/twbs/bootstrap-sass"
-  s.licenses = ["MIT"]
-  s.rubygems_version = "2.4.8"
-  s.summary = "Twitter's Bootstrap, converted to Sass and ready to drop into Rails or Compass"
+  s.email = "tom@conceptcoding.co.uk".freeze
+  s.homepage = "https://github.com/twbs/bootstrap-sass".freeze
+  s.licenses = ["MIT".freeze]
+  s.rubygems_version = "2.6.3".freeze
+  s.summary = "Twitter's Bootstrap, converted to Sass and ready to drop into Rails or Compass".freeze
 
-  s.installed_by_version = "2.4.8" if s.respond_to? :installed_by_version
+  s.installed_by_version = "2.6.3" if s.respond_to? :installed_by_version
 
   if s.respond_to? :specification_version then
     s.specification_version = 4
 
     if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then
-      s.add_runtime_dependency(%q<sass>, ["~> 3.2"])
-      s.add_development_dependency(%q<test-unit>, ["~> 2.5.5"])
-      s.add_development_dependency(%q<capybara>, [">= 0"])
-      s.add_development_dependency(%q<poltergeist>, [">= 0"])
-      s.add_development_dependency(%q<json>, [">= 1.8.1"])
-      s.add_development_dependency(%q<sprockets-rails>, [">= 2.1.3"])
-      s.add_development_dependency(%q<autoprefixer-rails>, ["~> 1.1"])
-      s.add_development_dependency(%q<jquery-rails>, [">= 3.1.0"])
-      s.add_development_dependency(%q<slim-rails>, [">= 0"])
-      s.add_development_dependency(%q<uglifier>, [">= 0"])
-      s.add_development_dependency(%q<compass>, [">= 0"])
-      s.add_development_dependency(%q<term-ansicolor>, [">= 0"])
+      s.add_runtime_dependency(%q<sass>.freeze, ["~> 3.2"])
+      s.add_development_dependency(%q<test-unit>.freeze, ["~> 2.5.5"])
+      s.add_development_dependency(%q<capybara>.freeze, [">= 0"])
+      s.add_development_dependency(%q<poltergeist>.freeze, [">= 0"])
+      s.add_development_dependency(%q<json>.freeze, [">= 1.8.1"])
+      s.add_development_dependency(%q<sprockets-rails>.freeze, [">= 2.1.3"])
+      s.add_development_dependency(%q<autoprefixer-rails>.freeze, ["~> 1.1"])
+      s.add_development_dependency(%q<jquery-rails>.freeze, [">= 3.1.0"])
+      s.add_development_dependency(%q<slim-rails>.freeze, [">= 0"])
+      s.add_development_dependency(%q<uglifier>.freeze, [">= 0"])
+      s.add_development_dependency(%q<compass>.freeze, [">= 0"])
+      s.add_development_dependency(%q<term-ansicolor>.freeze, [">= 0"])
     else
-      s.add_dependency(%q<sass>, ["~> 3.2"])
-      s.add_dependency(%q<test-unit>, ["~> 2.5.5"])
-      s.add_dependency(%q<capybara>, [">= 0"])
-      s.add_dependency(%q<poltergeist>, [">= 0"])
-      s.add_dependency(%q<json>, [">= 1.8.1"])
-      s.add_dependency(%q<sprockets-rails>, [">= 2.1.3"])
-      s.add_dependency(%q<autoprefixer-rails>, ["~> 1.1"])
-      s.add_dependency(%q<jquery-rails>, [">= 3.1.0"])
-      s.add_dependency(%q<slim-rails>, [">= 0"])
-      s.add_dependency(%q<uglifier>, [">= 0"])
-      s.add_dependency(%q<compass>, [">= 0"])
-      s.add_dependency(%q<term-ansicolor>, [">= 0"])
+      s.add_dependency(%q<sass>.freeze, ["~> 3.2"])
+      s.add_dependency(%q<test-unit>.freeze, ["~> 2.5.5"])
+      s.add_dependency(%q<capybara>.freeze, [">= 0"])
+      s.add_dependency(%q<poltergeist>.freeze, [">= 0"])
+      s.add_dependency(%q<json>.freeze, [">= 1.8.1"])
+      s.add_dependency(%q<sprockets-rails>.freeze, [">= 2.1.3"])
+      s.add_dependency(%q<autoprefixer-rails>.freeze, ["~> 1.1"])
+      s.add_dependency(%q<jquery-rails>.freeze, [">= 3.1.0"])
+      s.add_dependency(%q<slim-rails>.freeze, [">= 0"])
+      s.add_dependency(%q<uglifier>.freeze, [">= 0"])
+      s.add_dependency(%q<compass>.freeze, [">= 0"])
+      s.add_dependency(%q<term-ansicolor>.freeze, [">= 0"])
     end
   else
-    s.add_dependency(%q<sass>, ["~> 3.2"])
-    s.add_dependency(%q<test-unit>, ["~> 2.5.5"])
-    s.add_dependency(%q<capybara>, [">= 0"])
-    s.add_dependency(%q<poltergeist>, [">= 0"])
-    s.add_dependency(%q<json>, [">= 1.8.1"])
-    s.add_dependency(%q<sprockets-rails>, [">= 2.1.3"])
-    s.add_dependency(%q<autoprefixer-rails>, ["~> 1.1"])
-    s.add_dependency(%q<jquery-rails>, [">= 3.1.0"])
-    s.add_dependency(%q<slim-rails>, [">= 0"])
-    s.add_dependency(%q<uglifier>, [">= 0"])
-    s.add_dependency(%q<compass>, [">= 0"])
-    s.add_dependency(%q<term-ansicolor>, [">= 0"])
+    s.add_dependency(%q<sass>.freeze, ["~> 3.2"])
+    s.add_dependency(%q<test-unit>.freeze, ["~> 2.5.5"])
+    s.add_dependency(%q<capybara>.freeze, [">= 0"])
+    s.add_dependency(%q<poltergeist>.freeze, [">= 0"])
+    s.add_dependency(%q<json>.freeze, [">= 1.8.1"])
+    s.add_dependency(%q<sprockets-rails>.freeze, [">= 2.1.3"])
+    s.add_dependency(%q<autoprefixer-rails>.freeze, ["~> 1.1"])
+    s.add_dependency(%q<jquery-rails>.freeze, [">= 3.1.0"])
+    s.add_dependency(%q<slim-rails>.freeze, [">= 0"])
+    s.add_dependency(%q<uglifier>.freeze, [">= 0"])
+    s.add_dependency(%q<compass>.freeze, [">= 0"])
+    s.add_dependency(%q<term-ansicolor>.freeze, [">= 0"])
   end
 end
