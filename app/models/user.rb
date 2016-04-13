@@ -3,6 +3,8 @@ class User < ActiveRecord::Base
 	before_save :downcase_email
 	before_create :create_activation_digest
 
+	has_many :microposts, dependent: :destroy
+
 	def remember
 		self.remember_token = User.new_token
 		update_attribute(:remember_digest, User.digest(remember_token))
@@ -66,8 +68,13 @@ class User < ActiveRecord::Base
 		end
 
 		def password_reset_expired?
-			reset_sentat < 2.hours.ago 
+			reset_sentat < 2.hours.ago
 		end
+
+		def feed
+			Micropost.where("user_id = ?", id)
+		end
+		
 
 
 		private
