@@ -4,6 +4,17 @@ class User < ActiveRecord::Base
 	before_create :create_activation_digest
 
 	has_many :microposts, dependent: :destroy
+	has_many :active_relationships, class_name: "Relationship",
+																	foreign_key: "follower_id",
+																	dependent: :destroy
+  has_many :passive_relationships, class_name: "Relationship",
+																	foreign_key: "followed_id",
+																	dependent: :destroy
+
+	#following is a array, it consists of the values of :followed in the database
+	has_many :following, through: :active_relationships, source: :followed
+	#下面这条的source 可以省略，因为rails会根据前面的followers找到follower
+	has_many :followers, through: :passive_relationships, source: :follower
 
 	def remember
 		self.remember_token = User.new_token
@@ -71,10 +82,27 @@ class User < ActiveRecord::Base
 			reset_sentat < 2.hours.ago
 		end
 
-		def feed
-			Micropost.where("user_id = ?", id)
+
+	def feed
+        following_ids = "SELECT followed_id FROM relationships
+                         WHERE  follower_id = :user_id"
+		Micropost.where("user_id IN (#{following_ids}) OR user_id = :user_id", user_id: id)
+	end
+
+		def follow(other_user)
+			self.active_relationships.create(followed_id: other_user.id)
 		end
-		
+
+		def unfollow(other_user)
+			active_relationships.find_by(followed_id: other_user.id).destroy
+		end
+
+		def following?(other_user)
+			following.include?(other_user)
+		end
+
+
+
 
 
 		private
